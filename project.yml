@@ -2,9 +2,9 @@ environment:
   HEADERSURL: ${HEADERSURL}
 packages:
   - name: serverless-autoip
-    limits:
-      timeout: 180000
-      memory: 1024
     actions:
       - name: noip
+        limits:
+          timeout: 180000
+          memory: 1024
         runtime: 'python:default'
